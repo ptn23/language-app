@@ -34,17 +34,19 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://youtu.be/SNS_InJModQ
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with FreeConvert
-<img width="400" height="210" alt="Screen Recording 2026-06-15 233239" src="https://github.com/user-attachments/assets/d3f9760f-f9a8-4120-ad2f-a3d6bf5d8f72" />
+
+
+<img width="400" height="210" alt="Screen Recording 2026-06-15 233239" src="https://github.com/user-attachments/assets/54a63a8b-34d4-473f-aaa7-e806863ce70b" />
+
 
 
 ## Notes
 
-Main challenges were to figure out the logic behind the flip cards.
+Main challenges were to figure out the logic behind the flip cards. GIF quality might be less than ideal.
 ## License
 
     Copyright [yyyy] [Phuong Nguyen]
