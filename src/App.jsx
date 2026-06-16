@@ -17,16 +17,10 @@ function App() {
     setisFlipped(!isFlipped);
   }
   
-  function nextCard() {
+  function allCard() {
     const randomIndex = Math.floor(Math.random() * cards.length);
     setCurrentIndex(randomIndex);
     setisFlipped(false);
-  }
-
-  function previousCard(){
-    const randomIndex = Math.floor(Math.random() * cards.length);
-      setCurrentIndex(randomIndex);
-      setisFlipped(false);
   }
 
   return (
@@ -40,7 +34,7 @@ function App() {
     <div id="header">
         <h1>The Ultimate Language Test!</h1>
         <p>How good are you at identifying language? Can you decode both the language written and the meaning of the question?</p>
-        <p>Number of cards: 6</p>
+        <p>Number of cards: {cards.length}</p>
       </div>
     
       <div className="flashcard-section">
@@ -57,10 +51,10 @@ function App() {
         </div>
 
         <div className="navigation-buttons">
-          <button onClick={previousCard}> 
+          <button onClick={allCard}> 
             <img src="https://www.pngall.com/wp-content/uploads/12/Previous-Button-PNG-Free-Image.png" className="photo" alt="Previous"/>
           </button>
-          <button onClick={nextCard}>
+          <button onClick={allCard}>
             <img src="https://tse1.mm.bing.net/th/id/OIP.BC_WDubX2PbMWCv47bpc6gAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3.png" className="photo" alt="Next"/>
           </button>
         </div>
