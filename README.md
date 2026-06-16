@@ -38,11 +38,9 @@ Here's a walkthrough of implemented required features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with FreeConvert
+<img width="400" height="210" alt="Screen Recording 2026-06-15 233239" src="https://github.com/user-attachments/assets/d3f9760f-f9a8-4120-ad2f-a3d6bf5d8f72" />
+
 
 ## Notes
 
