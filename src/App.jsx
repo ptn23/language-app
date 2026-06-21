@@ -11,17 +11,42 @@ function App() {
    {question: "난 잠들고 싶었지만 일이 아직 많다", answer: "I want to go to sleep but I'm so tired in Korean", level: "hard"}
   ]
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setisFlipped] = useState(false);
+  const [isFlipped, setisFlipped] = useState(false); 
+  const [shuffle, setShuffle] = useState(false);
 
   function toggleAnswer(){
     setisFlipped(!isFlipped);
   }
-  
-  function allCard() {
+
+  function incrementIndex() {
+    if (shuffle){
+      const randomIndex = Math.floor(Math.random() * cards.length);
+      setCurrentIndex(randomIndex);
+    }
+    else{
+        if (currentIndex <= cards.length - 2){
+          setCurrentIndex(currentIndex + 1);
+        }
+    }
+  }
+
+  function decrementIndex() {
+    if (shuffle){
+      const randomIndex = Math.floor(Math.random() * cards.length);
+      setCurrentIndex(randomIndex);
+    }
+    else{
+        if (currentIndex > 0){
+          setCurrentIndex(currentIndex - 1);
+        }
+    }
+  }
+
+  const getRandomIndex = () => {
     const randomIndex = Math.floor(Math.random() * cards.length);
     setCurrentIndex(randomIndex);
-    setisFlipped(false);
-  }
+    setShuffle(true);
+  };
 
   return (
     <>
@@ -51,12 +76,29 @@ function App() {
         </div>
 
         <div className="navigation-buttons">
-          <button onClick={allCard}> 
+
+          <button onClick={decrementIndex}
+          disabled={!shuffle && currentIndex === 0}
+          className={!shuffle && currentIndex === 0 ? "disabled-btn" : ""}> 
+
             <img src="https://www.pngall.com/wp-content/uploads/12/Previous-Button-PNG-Free-Image.png" className="photo" alt="Previous"/>
           </button>
-          <button onClick={allCard}>
+          
+          <button onClick={incrementIndex}
+          disabled={!shuffle && currentIndex === cards.length - 1}
+          className={!shuffle && currentIndex === cards.length - 1 ? "disabled-btn" : ""}>
+
             <img src="https://tse1.mm.bing.net/th/id/OIP.BC_WDubX2PbMWCv47bpc6gAAAA?w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3.png" className="photo" alt="Next"/>
           </button>
+
+          <button onClick={getRandomIndex}>
+            Shuffle here
+          </button>
+          
+        </div>
+
+        <div className="result">
+          Guess the answer here: 
         </div>
 
       </div>

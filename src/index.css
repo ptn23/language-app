@@ -190,3 +190,8 @@ code {
   width: 100%;
   margin-top: 30px;       
 }
+button:disabled, .disabled-btn {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(100%); /* Optional: entirely removes color from the PNG image */
+}
