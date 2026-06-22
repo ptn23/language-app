@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Holder from './components/InputForm.jsx'
 
 function App() {
   const cards = [
@@ -13,6 +14,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setisFlipped] = useState(false); 
   const [shuffle, setShuffle] = useState(false);
+  const [score, setScore] = useState(0);
 
   function toggleAnswer(){
     setisFlipped(!isFlipped);
@@ -98,7 +100,9 @@ function App() {
         </div>
 
         <div className="result">
-          Guess the answer here: 
+          Guess the answer here (sentence structure: "ABC in Chinese / BCD in Russian"):
+          <Holder actualAnswer={cards[currentIndex].answer}/>
+
         </div>
 
       </div>

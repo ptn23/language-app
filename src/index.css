@@ -195,3 +195,9 @@ button:disabled, .disabled-btn {
   cursor: not-allowed;
   filter: grayscale(100%); /* Optional: entirely removes color from the PNG image */
 }
+.red-box{
+  border: 2px solid red
+}
+.green-box{
+  border: 2px solid green
+}
