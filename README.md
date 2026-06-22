@@ -43,7 +43,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories: https://youtu.be/3YM4pe9_InU
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## GIF (used FreeConvert)
+<img width="400" height="210" alt="Screen Recording 2026-06-22 000428" src="https://github.com/user-attachments/assets/6f52ba76-007c-4cca-9d55-3bb45b0c2532" />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
